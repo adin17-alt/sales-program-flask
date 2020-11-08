@@ -180,19 +180,93 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                        <li class="nav-item has-treeview">
+                        <li class="nav-item has-treeview {% if menu =='master' %} menu-open {% endif %}">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-copy"></i>
                                 <p>
-                                    Layout Options
+                                    Master Data
                                     <i class="fas fa-angle-left right"></i>
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                    <a href="/masterbarang" class="nav-link {% if submenu =='barang' %} active {% endif %}">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Top Navigation</p>
+                                        <p>Data Barang</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="/mastersupplier" class="nav-link {% if submenu =='supplier' %} active {%endif%}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Data Supplier</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="/masterpelanggan" class="nav-link {% if submenu=='pelanggan' %} active {% endif %}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Data Pelanggan</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item has-treeview {% if menu=='pembelian' %} menu-open {% endif %}">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Transaksi Pembelian
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/formpembelian" class="nav-link {% if submenu=='formpembelian' %} active {% endif %}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Form Pembelian</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="/datapembelian" class="nav-link {% if submenu=='datapembelian' %} active {% endif %}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Data Pembelian</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item has-treeview {% if menu=='penjualan' %} menu-open {%endif%}">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Transaksi Penjualan
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/formpenjualan" class="nav-link {% if submenu =='formpenjualan' %} active {%endif%}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Form Penjualan</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="/datapenjualan" class="nav-link {% if submenu =='datapenjualan' %} active {%endif%}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Data Penjualan</p>
                                     </a>
                                 </li>
                             </ul>
